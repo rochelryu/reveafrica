@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DefaultAdminModule } from 'nestjs-admin';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -9,6 +8,7 @@ import { TypeThemeModule } from './modules/type-theme/type-theme.module';
 import { CategorieModule } from './modules/categorie/categorie.module';
 import { RessourceModule } from './modules/ressource/ressource.module';
 import { ConfigModule } from '@nestjs/config';
+import { FrontsideModule } from './frontside/frontside.module';
 
 @Module({
   imports: [
@@ -30,8 +30,8 @@ import { ConfigModule } from '@nestjs/config';
     TypeThemeModule,
     CategorieModule,
     RessourceModule,
+    FrontsideModule,
   ],
-  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}

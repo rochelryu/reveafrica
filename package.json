@@ -28,6 +28,7 @@
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^7.6.15",
     "@nestjs/typeorm": "^7.1.5",
+    "ejs": "^3.1.6",
     "mysql2": "^2.2.5",
     "nestjs-admin": "^0.4.1",
     "reflect-metadata": "^0.1.13",
